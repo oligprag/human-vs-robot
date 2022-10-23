@@ -50,6 +50,7 @@ body {
 
 #fly-in-text {
     font-size: 2rem;
+    top: -20rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -131,7 +132,6 @@ body {
     background: url("./images/red-background.jpeg");
     bottom: -50rem;
     transition: bottom 1s ease-in-out;
-
 
 }
 
