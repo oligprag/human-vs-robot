@@ -73,11 +73,11 @@ setTimeout(() => {
 
 setTimeout(() => {
     document.getElementById("headline4").classList.toggle("fadeOut")
-}, 470)
+}, 47000)
 
 setTimeout(() => {
     document.getElementById("fly-in-text").classList.toggle("flew-in-text")
-}, 480)
+}, 48000)
 
 //human/robot entry
 
@@ -85,7 +85,7 @@ setTimeout(() => {
     document.querySelector(".player-human").classList.toggle("human-fly-in")
     document.querySelector(".player-robot").classList.toggle("robot-fly-in")
 
-}, 495)
+}, 49500)
 
 
 let scores = document.querySelector(".score-system")
@@ -96,12 +96,12 @@ setTimeout(() => {
     scores.classList.remove("display-none")
     statBar.classList.add("bottom-zero")
 
-}, 490)
+}, 49000)
 
 setTimeout(() => {
     weapons.classList.remove("display-absolute-none")
 
-}, 500)
+}, 50000)
 
 //event listeners for playing game. 
 

@@ -62,23 +62,23 @@ function playRound (play, comp) {
             addChosenWeapon(play)
             addChosenWeaponRobot(comp)
     } else if (play === "scissors" && comp === "paper") {
-            middleText.textContent = `Player wins!! His ${play}, beats computers ${comp}`
+            middleText.textContent = `Player wins!! Their ${play}, beats computers ${comp}`
             playerScore++
             addChosenWeapon(play)
             addChosenWeaponRobot(comp)
     } else if (play === "scissors" && comp === "rock") {
             computerScore++
-            middleText.textContent = `Computer wins their ${comp}, beats players ${play}`
+            middleText.textContent = `Computer takes a point! it's ${comp} has beaten players ${play}`
             addChosenWeapon(play)
             addChosenWeaponRobot(comp)
     } else if (play === "rock" && comp === "scissors") {
             playerScore++
-            middleText.textContent = `Player wins!! their ${play}, beats computers ${comp}`
+            middleText.textContent = `Player wins!! their ${play} beats computers ${comp}`
             addChosenWeapon(play)
             addChosenWeaponRobot(comp)
     } else if (play === "rock" && comp === "paper") {
             computerScore++
-            middleText.textContent = `Computer wins, its ${comp}, beats players ${play}`
+            middleText.textContent = `Computer wins, its ${comp} beats players ${play}`
             addChosenWeapon(play)
             addChosenWeaponRobot(comp)
     } else if (play === "paper" && comp === "rock") {
@@ -88,7 +88,7 @@ function playRound (play, comp) {
             addChosenWeaponRobot(comp)
     } else if (play === "paper" && comp === "scissors") {
             computerScore++
-            middleText.textContent = `Computer wins, its ${comp}, beats players ${play}`
+            middleText.textContent = `Computer wins! its ${comp} beats players ${play}`
             addChosenWeapon(play)
             addChosenWeaponRobot(comp)
     } 
@@ -145,9 +145,3 @@ scissors.addEventListener("click", () => {
 //     }
 
 // }
-
-
-  addToDo()
-  addToDo()
-  addToDo()
-  addToDo()
