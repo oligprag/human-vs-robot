@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="score-system display-none">
+        <div class="scoreboard-player">
+          <div class="player-name">Player</div>
+          <div class="score">0</div>
+        </div>
+        <div class="scoreboard-computer">
+          <div class="computer-name">Computer</div>
+          <div class="score">0</div>
+        </div>
+    </div>
+
+    <div class="weapons display-absolute-none">
+        <img class="paper" src="./images/paper.png">
+        <img class="rock" src="./images/rock.png" alt="">
+        <img class="scissors" src="./images/scissors.png" alt="">
+    </div>
+
+    <div>
+      <h1 id="headline"></h1>
+      <h1 id="headline2"></h1>
+      <h1 id="headline3"></h1>
+      <h1 id="headline4"></h1>
+    </div>
+    <div id="fly-in-text">FIGHT!</div>
+    <img src="./images/cartoon-human.jpeg" class="player player-human"alt="">
+    <img src="./images/cartoon-robot.jpeg" class="player player-robot">
+
+    <div class="stat-board">
+        <div class="player-stats">
+            <h1>Human</h1>
+            <div class="weapons-history">
+              <ul>
+
+              </ul>
+            </div>
+            <div class="player-choices">
+
+                <img id="human-face" src="./images/doomguy-0hit-normal.jpeg" alt="">
+
+            </div>
+        </div>
+        <div class="robot-stats">
+            <img id="computer-face" src="./images/terminator-0-face.jpg" alt="">
+            <h1>Cyborg</h1>
+            <div class="weapons-history-robot">
+              <ul>
+
+              </ul>
+            </div>
+
+
+            <div class="robot-choices">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./intro.js"></script>
+    <script src="./script.js"></script>
+
+  </body>
+</html>

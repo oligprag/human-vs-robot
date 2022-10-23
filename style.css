@@ -1,0 +1,252 @@
+body { 
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0, 0, 0, 0.774), rgb(0, 0, 0)), url(images/hero_nuclear_blast.jpeg);
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.score {
+    padding-top: 30px;
+}
+
+.score-system {
+    color: fff;
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    gap: 20rem;
+    text-align: center;
+}
+
+.players-score {
+    margin-left: auto;
+}
+
+
+#headline, #headline2, #headline3, #headline4 {
+    position: absolute;
+    text-align: left;
+    font-size: 40px;
+    text-align: left;
+    top: 300px;
+    right: 50%;
+    transform: translateX(50%);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: opacity 1s ease-in-out;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+
+#fly-in-text {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 2000px;
+    transform: translateX(-50%);
+    transition: top 0.5s ease-in-out;
+}
+
+.flew-in-text {
+    top: 500px !important;
+}
+
+.player {
+    scale: 0.5
+}
+
+
+.player-robot {
+    position: absolute;
+    right: -800px;
+    top: 420px;
+    transition: right 0.5s ease-in-out;
+}
+
+.player-human {
+    position: absolute;
+    left: -900px;
+    transition: left 0.5s ease-in-out;
+}
+
+.robot-fly-in {
+    right: -100px !important; 
+}
+.human-fly-in {
+    left: -100px !important; 
+}
+
+/* STAT BOARD  */
+
+.stat-board {
+    box-shadow: 0px -20px 0px 0px black;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 320px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    background: url("./images/red-background.jpeg");
+    bottom: -500px;
+    transition: bottom 1s ease-in-out;
+
+
+}
+
+.robot-stats, .player-stats {
+    position: relative;
+}
+
+.robot-stats img {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    border-left: 5px black solid;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+    border-right: 5px black solid;
+}
+
+.player-stats img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-left: 5px black solid;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+    border-right: 5px black solid;
+
+}
+
+.player-choices {
+    display: flex;
+}
+
+.stat-board img {
+    width: 300px;
+    height: 300px;
+}
+
+.player-stats h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.robot-stats h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-absolute-none {
+    display: none !important;
+}
+
+.weapons {
+    position: absolute;
+    display: flex;
+    z-index: 50;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 350px;
+    transition: fade 0.5s ;
+}
+
+.weapons img {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.table {
+    border: red;
+}
+
+.bottom-zero {
+    bottom: 0px;
+}
+
+.weapons-history {
+    border: 2px solid white;
+    overflow: hidden;
+    color: white;
+    position: absolute;
+    background: black;
+    transform: translateX(-25%);
+    width: 400px;
+    height: 150px;
+    top: 120px;
+    left: 50%;
+}
+
+li  {
+    list-style: none;
+}
+
+.weapons-history-robot {
+    border: 2px solid white;
+    overflow: hidden;
+    color: white;
+    position: absolute;
+    background: black;
+    transform: translateX(-25%);
+    width: 400px;
+    height: 150px;
+    top: 120px;
+    left: 35%;
+}
+
+.weapons-history li  {
+    list-style: none;
+}
+
+.weapons .rock {
+    animation: float 3.1s ease-in-out infinite;
+
+}
+.weapons .scissors {
+    animation: float 3.9s ease-out infinite;
+
+}
+.weapons .paper {
+    animation: float 3.5s ease-in infinite;
+
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 10px 5px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
