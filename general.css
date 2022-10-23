@@ -10,3 +10,11 @@
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
   }
+
+  .display-none {
+    display: none;
+}
+
+.bottom-zero {
+    bottom: 0px;
+}

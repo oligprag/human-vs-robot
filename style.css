@@ -18,7 +18,7 @@ body {
     color: fff;
     display: flex;
     position: absolute;
-    top: 10rem;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 3rem;
@@ -52,38 +52,69 @@ body {
     font-size: 2rem;
     position: absolute;
     left: 50%;
-    top: 2000px;
     transform: translateX(-50%);
     transition: top 0.5s ease-in-out;
 }
 
 .flew-in-text {
-    top: 500px !important;
+    top: 55rem !important;
 }
 
+/* player images  */
 
 .player-robot {
     position: absolute;
-    right: -800px;
-    top: 300px;
+    right: 200px;
+    top: -40rem;
+    scale: 0.4;
     transition: right 0.5s ease-in-out;
-    scale: 0.3
+    z-index: -99;
 }
 
 .player-human {
+    scale: 0.2;
     position: absolute;
-    top: -306px;
-    left: -900px;
+    top: -100rem;
     transition: left 0.5s ease-in-out;
-    scale: 0.2
+    z-index: -99
 }
 
 .robot-fly-in {
-    right: -100px !important; 
+    right: -10rem;
 }
 .human-fly-in {
-    left: -100px !important; 
+    left: -15rem;
 }
+
+/* FLOATING WEAPONS */
+
+
+.weapons .rock {
+    animation: float 3.1s ease-in-out infinite;
+
+}
+.weapons .scissors {
+    animation: float 3.9s ease-out infinite;
+
+}
+.weapons .paper {
+    animation: float 3.5s ease-in infinite;
+
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
 
 /* STAT BOARD  */
 
@@ -98,7 +129,7 @@ body {
     color: white;
     position: absolute;
     background: url("./images/red-background.jpeg");
-    bottom: -500px;
+    bottom: -50rem;
     transition: bottom 1s ease-in-out;
 
 
@@ -108,7 +139,9 @@ body {
     position: relative;
 }
 
-.robot-stats img {
+#computer-face {
+    width: 20rem;
+    height: 20rem;
     position: absolute;
     top: 0%;
     right: 0%;
@@ -118,7 +151,9 @@ body {
     border-right: 5px black solid;
 }
 
-.player-stats img {
+#human-face {
+    width: 20rem;
+    height: 20rem;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -131,11 +166,6 @@ body {
 
 .player-choices {
     display: flex;
-}
-
-.stat-board img {
-    width: 20rem;
-    height: 20rem;
 }
 
 .player-stats h1 {
@@ -152,10 +182,6 @@ body {
     position: absolute;
     top: 0px;
     right: 44%;
-}
-
-.display-none {
-    display: none;
 }
 
 .display-absolute-none {
@@ -179,14 +205,6 @@ body {
     cursor: pointer;
 }
 
-.table {
-    border: red;
-}
-
-.bottom-zero {
-    bottom: 0px;
-}
-
 .weapons-history {
     border: 2px solid white;
     overflow: hidden;
@@ -194,7 +212,7 @@ body {
     position: absolute;
     background: black;
     transform: translateX(-25%);
-    width: 40rem;
+    width: 40%;
     height: 10rem;
     top: 6rem;
     left: 50%;
@@ -211,7 +229,7 @@ li  {
     position: absolute;
     background: black;
     transform: translateX(-25%);
-    width: 40rem;
+    width: 40%;
     height: 10rem;
     top: 6rem;
     left: 35%;
@@ -221,30 +239,3 @@ li  {
     list-style: none;
 }
 
-.weapons .rock {
-    animation: float 3.1s ease-in-out infinite;
-
-}
-.weapons .scissors {
-    animation: float 3.9s ease-out infinite;
-
-}
-.weapons .paper {
-    animation: float 3.5s ease-in infinite;
-
-}
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 10px 5px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-}

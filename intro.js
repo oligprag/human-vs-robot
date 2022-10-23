@@ -77,7 +77,7 @@ setTimeout(() => {
 
 setTimeout(() => {
     document.getElementById("fly-in-text").classList.toggle("flew-in-text")
-}, 485)
+}, 480)
 
 //human/robot entry
 

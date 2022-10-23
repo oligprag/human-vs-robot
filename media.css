@@ -1,0 +1,154 @@
+@media only screen and (max-width: 1600px) {
+    .robot-fly-in {
+        right: -20rem;
+    }
+    .human-fly-in {
+        left: -25rem;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .robot-fly-in {
+        right: -30rem;
+    }
+    .human-fly-in {
+        left: -35rem;
+    }
+
+    .stat-board {
+        gap: 2rem;
+        height: 15rem;
+    
+    }
+
+    #computer-face, #human-face {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .weapons-history-robot, .weapons-history {
+        height: 7rem;
+    }
+
+    .weapons {
+        bottom: 45rem;
+    }
+  }
+
+  @media only screen and (max-width: 940px) {
+
+    #fly-in-text {
+        font-size: 1.5rem;
+    }
+    .human-fly-in {
+        left: -39rem;
+    }
+    .weapons-history-robot {
+        left: 20%;
+    }
+    .weapons-history {
+        left: 62%;
+    }
+    }
+
+    @media only screen and (max-width: 750px) {
+        #computer-face, #human-face {
+            display: none;
+        }
+
+    .robot-stats h1 {
+        right: 50%;
+    }
+
+    .player-robot {
+        scale: 0.2;
+        top: -36rem;
+    }
+
+    .player-human {
+        scale: 0.1;
+    }
+
+    .weapons-history, .weapons-history-robot {
+        width: 60%;
+    }
+
+    }
+
+    @media only screen and (max-width: 500px) {
+        .score-system {
+            font-size: 1.8rem;
+        }
+
+        .weapons img {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .stat-board li {
+            font-size: 0.8rem;
+        }
+
+        #headline, #headline2, #headline3, #headline4 {
+            top: 150px;
+            width: 90vw;
+  
+        }
+
+
+
+
+    }
+
+    @media only screen and (max-width: 400px) {
+
+    .weapons {
+        bottom: 38rem;
+    }        
+
+
+    .player-robot {
+        scale: 0.1;
+        top: -33rem;
+        right: -43rem;
+    }
+
+    .player-human {
+        left: -47rem;
+        scale: 0.05;
+        top: -96rem;
+    }
+
+    .flew-in-text {
+        top: 45rem !important;
+    }
+
+    .robot-stats h1 {
+        right: 30%;
+        font-size: 2.4rem;
+    }
+
+    .player-stats h1 {
+        font-size: 2.4rem;
+        left: 41%;
+    }
+
+    }
+
+
+    @media only screen and (max-width: 430px) and (max-height: 900px) {
+
+        .flew-in-text {
+            top: 47rem !important;
+        }
+
+    }
+
+    @media only screen and (max-width: 400px) and (max-height: 700px) {
+
+        .flew-in-text {
+            top: 33rem !important;
+        }
+        
+
+    }
